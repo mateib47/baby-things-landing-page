@@ -1,0 +1,2 @@
+-fix for mobile displays
+-add a better logo
