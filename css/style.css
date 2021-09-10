@@ -5,6 +5,7 @@ html{
 body{
   background-color: #F2ECD8;
   margin: 0;
+  text-align: center;
 }
 nav {
   position: fixed;
@@ -38,9 +39,9 @@ i{
   font-size: 41px;
 }
 .full-screen{
-  height: 80vh;
+  height: 100vh;
   max-width: 100%;
-  padding:5em;
+  padding-top:5em;
 }
 .center{
   display: flex;
@@ -48,6 +49,7 @@ i{
   justify-content: center;
   text-align: center;
   margin: auto;
+  padding:3em 3em 0em 3em;
 }
 p, h1, .text{
   color: #3772A6;
@@ -64,9 +66,12 @@ p, h1, .text{
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-img{
-  max-width: 50%;
+.half-width{
+  max-width: 40%;
   margin: auto;
+}
+.img-responsive{
+  max-width: 50%;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .description{
@@ -96,19 +101,38 @@ button{
   box-shadow: 0 20px 25px rgba(0,0,0,0.18), 0 6px 6px rgba(0,0,0,0.23);
   background-color: #A1B8DA;
   max-width: 100%;
-  height: auto;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  width: 15%;
-  margin: 1vw;
-  padding:10px;
+  margin: 30px;
+  padding: 19px;
   text-align: center;
+  transition-duration: 500ms;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.plan-box:hover {
+  transform: scaleY(1.15) scaleX(1.15);
 }
 #plans{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 8vw;
+  align-items: center;
+  margin: auto;
   flex-wrap: wrap;
+  max-width: 75%;
+}
+@media screen and (max-width: 1156px) {
+  #welcome-img{
+    display: none;
+  }
+  #welcome-text-box{
+    max-width:70%;
+  }
+}
+@media screen and (max-width: 795px) {
+  .plan-box{
+    width: 400px;
+  }
 }

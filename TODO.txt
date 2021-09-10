@@ -1,2 +1,4 @@
 -fix for mobile displays
 -add a better logo
+-fix plan-box box getting bigger when is more text
+-FIX navbar getting bigger on mobile; implement a modal box with the navigation
