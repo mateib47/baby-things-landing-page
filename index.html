@@ -12,13 +12,26 @@
   </head>
   <body>
     <nav>
-      <a href="#welcome" id="nav-title">Baby Things <i class="fa fa-child"></i></h1>
+      <a href="#welcome" id="nav-title">Baby Things <i class="fa fa-child"></i></a>
+      <i class="fa fa-bars" id="bars-menu" onclick="showModal(document.getElementById('menu'))"></i>
       <div class="links">
         <a href="#get-started" class="nav-link">Get Started</a>
         <a href="#" class="nav-link">What's Inside</a>
         <a href="#" class="nav-link">Our Story</a>
         <a href="#" class="nav-link">Pricing</a>
         <a href="#" class="nav-link">FAQ</a>
+      </div>
+      <div class="modal" id="menu">
+        <div class="modal-content">
+          <span class="close" onclick="hideModal(document.getElementById('menu'))">&times;</span>
+          <div class="links-mobile" onclick="hideModal(document.getElementById('menu'))">
+            <a href="#get-started" class="nav-link">Get Started</a>
+            <a href="#" class="nav-link">What's Inside</a>
+            <a href="#" class="nav-link">Our Story</a>
+            <a href="#" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">FAQ</a>
+          </div>
+        </div>
       </div>
     </nav>
     <section id="welcome" class="full-screen center">
@@ -61,5 +74,6 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
