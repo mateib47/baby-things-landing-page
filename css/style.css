@@ -200,6 +200,12 @@ button{
   }
 }
 @media screen and (max-width: 795px) {
+  .center{
+    padding:1em 1em 0em 1em;
+  }
+  #welcome-text-box{
+    max-width:90%;
+  }
   .plan-box{
     width: 400px;
   }
@@ -208,5 +214,17 @@ button{
   }
   .quarter-width{
     max-width:40%;
+  }
+  .motives{
+    margin: 0;
+  }
+  .side-by-side{
+    flex-direction: column;
+  }
+  .half-width{
+    max-width: 80%;
+  }
+  .motive{
+    margin:60px 0px;
   }
 }
