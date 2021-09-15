@@ -1,3 +1,4 @@
 -add a better logo
 -fix plan-box box getting bigger when is more text
 -add a footer
+-make a server and store the user inputs; now it s stored locally; maybe make a tomcat server

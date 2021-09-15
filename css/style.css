@@ -49,6 +49,11 @@ i{
   max-width: 100%;
   padding-top:5em;
 }
+.half-screen{
+  height: 50vh;
+  max-width: 100%;
+  padding-top:5em;
+}
 .full-screen-no-height{
   height: auto;
   max-width: 100%;
@@ -179,6 +184,21 @@ button{
 .motive{
   margin:60px 20px;
 }
+form{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+.input{
+  width: 30%;
+  height: 30px;
+  margin: 25px;
+  border-radius: 5px;
+  border: 0;
+}
 footer {
   background-color: #436E73;
   height: 10vh;
@@ -245,5 +265,8 @@ footer a:hover{
   }
   .motive{
     margin:60px 0px;
+  }
+  .input{
+    width: 70%;
   }
 }
