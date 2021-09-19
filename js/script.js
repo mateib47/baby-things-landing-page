@@ -56,7 +56,15 @@ function addEmail(text){
     email:text
   }
   localStorage.setItem('emailRef', JSON.stringify(user));
+  let xhr = new XMLHttpRequest();
+  const url = "http://192.168.2.13:8080/api/v1/person";
+  xhr.open("POST",url , true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+    name: text
+  }));
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const choiceRef = localStorage.getItem('choiceRef');
