@@ -80,18 +80,17 @@ p, h1, .text{
 .side-by-side{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .half-width{
   max-width: 40%;
-  margin: auto;
 }
 .quarter-width{
   max-width: 20%;
   margin: auto;
 }
-.img-responsive{
+.img-shadow{
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .description{
@@ -113,6 +112,16 @@ button{
 .grayed{
   background-color: rgba(0,0,0,0.1);
   padding: 20px;
+}
+.circle{
+  border-radius: 50%;
+  margin-top: 100px;
+  padding: 50px;
+}
+.phone-icon{
+  color: #3772A6!important;
+  font-size: 30px!important;
+  margin-right: 15px;
 }
 .italic{
   font-style: italic;
@@ -216,8 +225,9 @@ footer a{
 footer a:hover{
   color: #A1B8DA;
 }
+
 @media screen and (max-width: 1156px) {
-  #welcome-img{
+  .img-hide{
     display: none;
   }
   #welcome-text-box{
